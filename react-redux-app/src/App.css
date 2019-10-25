@@ -2,3 +2,6 @@
   text-align: center;
 }
 
+Card {
+  border: 1px solid black;
+}
