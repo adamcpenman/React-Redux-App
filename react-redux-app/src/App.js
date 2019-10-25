@@ -10,7 +10,7 @@ function App(props) {
   }, []);
 
   if (props.isCharacterLoading) {
-    return <h2>Loading Data...</h2>;
+    return <div className="spinner"><h2>Loading Data...</h2></div>;
   }
 
   return (
