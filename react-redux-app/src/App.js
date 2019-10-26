@@ -3,6 +3,8 @@ import "./App.css";
 import { connect } from "react-redux";
 import { fetchCharacter } from "./actions/potter";
 import CharacterCard from "./Components/CharacterCard";
+import HarryLogo from "./images/Harry-Potter-Logo.png";
+
 
 function App(props) {
   useEffect(() => {
@@ -15,6 +17,7 @@ function App(props) {
 
   return (
     <div className="card-container">
+      <img className="harry-logo" src={HarryLogo} alt="Logo" />
       {props.characterError && <p>{props.characterError}</p>}
       {props.characters.map(character => (
         <CharacterCard
